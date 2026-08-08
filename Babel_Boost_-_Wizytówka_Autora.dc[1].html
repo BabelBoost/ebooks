@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; box-sizing: border-box; }
+  * { box-sizing: border-box; }
+  a { color: #9c4e22; text-decoration: none; }
+  a:hover { color: #c1652f; text-decoration: underline; }
+</style>
+<script src="./image-slot.js"></script>
+</helmet>
+
+<div style="font-family: 'Work Sans', sans-serif; background: #f7f2e9; color: #2a2521; line-height: 1.55;">
+
+  <!-- NAV -->
+  <div style="position: sticky; top: 0; z-index: 20; background: rgba(247,242,233,0.92); backdropFilter: blur(6px); borderBottom: 1px solid #e2d7c3;">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 18px 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flexWrap: wrap;">
+      <div style="fontFamily: 'Lora', serif; fontWeight: 700; fontSize: 20px; letterSpacing: 0.03em;">Babel&nbsp;Boost</div>
+      <div style="display: flex; gap: 22px; flexWrap: wrap; fontSize: 15px; fontWeight: 500;">
+        <a href="#about" style="color: #2a2521;">About</a>
+        <a href="#books" style="color: #2a2521;">Books</a>
+        <a href="#reviews" style="color: #2a2521;">Reviews</a>
+        <a href="#newsletter" style="color: #2a2521;">Newsletter</a>
+        <a href="#blog" style="color: #2a2521;">Updates</a>
+        <a href="#contact" style="color: #2a2521;">Contact</a>
+      </div>
+      <a href="https://author.amazon.com/books" style="background: #c1652f; color: #fffaf2; padding: 10px 20px; borderRadius: 999px; fontSize: 14px; fontWeight: 600; whiteSpace: nowrap;">View on Amazon</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div style="max-width: 1160px; margin: 0 auto; padding: 72px 28px 64px; display: flex; gap: 56px; alignItems: center; flexWrap: wrap;">
+    <div style="flex: 1 1 420px; minWidth: 280px;">
+      <div style="display: inline-block; fontSize: 13px; fontWeight: 600; letterSpacing: 0.08em; textTransform: uppercase; color: #9c4e22; marginBottom: 16px;">Nonfiction Author &middot; Amazon KDP</div>
+      <h1 style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: clamp(2.1rem, 4.5vw, 3.4rem); lineHeight: 1.15; margin: 0 0 20px; textWrap: pretty;">Practical guides that actually help &mdash; no fluff.</h1>
+      <p style="fontSize: 18px; color: #4a4238; maxWidth: 520px; margin: 0 0 32px; textWrap: pretty;">I write practical, reader-friendly books for busy people &mdash; from Iceland travel to quick cooking, health and mindfulness, to everyday skills. Always the same promise: clear structure, clean design, and tools you can use today.</p>
+      <div style="display: flex; gap: 14px; flexWrap: wrap;">
+        <a href="https://author.amazon.com/books" style="background: #2a2521; color: #f7f2e9; padding: 14px 26px; borderRadius: 999px; fontWeight: 600; fontSize: 15px;">View books on Amazon</a>
+        <a href="#newsletter" style="border: 1.5px solid #2a2521; color: #2a2521; padding: 14px 26px; borderRadius: 999px; fontWeight: 600; fontSize: 15px;">Sign up for the newsletter</a>
+      </div>
+    </div>
+    <div style="flex: 0 0 260px; display: flex; justifyContent: center;">
+      <image-slot id="author-photo" shape="circle" style="width: 260px; height: 260px;" placeholder="Author photo"></image-slot>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div id="about" style="background: #fffdf8; borderTop: 1px solid #e2d7c3; borderBottom: 1px solid #e2d7c3;">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 80px 28px;">
+      <div style="fontSize: 13px; fontWeight: 600; letterSpacing: 0.08em; textTransform: uppercase; color: #9c4e22; marginBottom: 12px;">About</div>
+      <h2 style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: clamp(1.7rem, 3vw, 2.4rem); margin: 0 0 28px;">Babel Boost</h2>
+      <p style="fontSize: 17px; color: #4a4238; maxWidth: 720px; margin: 0 0 40px; textWrap: pretty;">I'm an independent author and digital designer creating practical guides for busy readers. From Iceland travel guides, to quick cookbooks, health and longevity guides, mindfulness, and everyday skills &mdash; every book has the same mission: clear structure, thoughtful design, and tools you can use right away. Expect concise guides, workbooks, and creative planners built around checklists and simple, practical steps.</p>
+      <div style="display: grid; gridTemplateColumns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;">
+        <div style="background: #f7f2e9; border: 1px solid #e2d7c3; borderRadius: 16px; padding: 26px;">
+          <div style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: 18px; marginBottom: 8px;">Clear structure</div>
+          <div style="fontSize: 15px; color: #6b6259;">Every book walks you through step by step, no filler.</div>
+        </div>
+        <div style="background: #f7f2e9; border: 1px solid #e2d7c3; borderRadius: 16px; padding: 26px;">
+          <div style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: 18px; marginBottom: 8px;">Clean design</div>
+          <div style="fontSize: 15px; color: #6b6259;">A clear layout and look that makes reading &mdash; and returning &mdash; easy.</div>
+        </div>
+        <div style="background: #f7f2e9; border: 1px solid #e2d7c3; borderRadius: 16px; padding: 26px;">
+          <div style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: 18px; marginBottom: 8px;">Practical tools</div>
+          <div style="fontSize: 15px; color: #6b6259;">Checklists and workbooks you can use from page one.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOOKS -->
+  <div id="books" style="max-width: 1160px; margin: 0 auto; padding: 84px 28px;">
+    <div style="fontSize: 13px; fontWeight: 600; letterSpacing: 0.08em; textTransform: uppercase; color: #9c4e22; marginBottom: 12px;">Books</div>
+    <h2 style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: clamp(1.7rem, 3vw, 2.4rem); margin: 0 0 12px;">Guides and checklists you can use now</h2>
+    <p style="fontSize: 16px; color: #6b6259; maxWidth: 560px; margin: 0 0 44px;">Featured titles from the Babel Boost series. Click a cover to add your own, and link each title to its Amazon page.</p>
+    <div style="display: grid; gridTemplateColumns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px;">
+
+      <div style="display: flex; flexDirection: column; gap: 14px;">
+        <image-slot id="book-cover-1" shape="rounded" radius="10" style="width: 100%; aspectRatio: 2/3;" placeholder="Cover: Iceland"></image-slot>
+        <div style="fontSize: 12px; fontWeight: 600; letterSpacing: 0.05em; textTransform: uppercase; color: #9c4e22;">Travel</div>
+        <div style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: 17px;">Reykjavík, Your Way</div>
+        <div style="fontSize: 14px; color: #6b6259;">A concise Iceland guide for busy travelers.</div>
+        <a href="https://author.amazon.com/books" style="fontSize: 14px; fontWeight: 600;">View on Amazon &rarr;</a>
+      </div>
+
+      <div style="display: flex; flexDirection: column; gap: 14px;">
+        <image-slot id="book-cover-2" shape="rounded" radius="10" style="width: 100%; aspectRatio: 2/3;" placeholder="Cover: cooking"></image-slot>
+        <div style="fontSize: 12px; fontWeight: 600; letterSpacing: 0.05em; textTransform: uppercase; color: #9c4e22;">Cooking</div>
+        <div style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: 17px;">15 Minutes, One Pot</div>
+        <div style="fontSize: 14px; color: #6b6259;">Fast, filling recipes for every day of the week.</div>
+        <a href="https://author.amazon.com/books" style="fontSize: 14px; fontWeight: 600;">View on Amazon &rarr;</a>
+      </div>
+
+      <div style="display: flex; flexDirection: column; gap: 14px;">
+        <image-slot id="book-cover-3" shape="rounded" radius="10" style="width: 100%; aspectRatio: 2/3;" placeholder="Cover: health"></image-slot>
+        <div style="fontSize: 12px; fontWeight: 600; letterSpacing: 0.05em; textTransform: uppercase; color: #9c4e22;">Health</div>
+        <div style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: 17px;">Health for Decades</div>
+        <div style="fontSize: 14px; color: #6b6259;">A practical, step-by-step longevity plan.</div>
+        <a href="https://author.amazon.com/books" style="fontSize: 14px; fontWeight: 600;">View on Amazon &rarr;</a>
+      </div>
+
+      <div style="display: flex; flexDirection: column; gap: 14px;">
+        <image-slot id="book-cover-4" shape="rounded" radius="10" style="width: 100%; aspectRatio: 2/3;" placeholder="Cover: mindfulness"></image-slot>
+        <div style="fontSize: 12px; fontWeight: 600; letterSpacing: 0.05em; textTransform: uppercase; color: #9c4e22;">Mindfulness</div>
+        <div style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: 17px;">Mindfulness in 10 Minutes</div>
+        <div style="fontSize: 14px; color: #6b6259;">Micro-habits of calm built into your daily schedule.</div>
+        <a href="https://author.amazon.com/books" style="fontSize: 14px; fontWeight: 600;">View on Amazon &rarr;</a>
+      </div>
+
+      <div style="display: flex; flexDirection: column; gap: 14px;">
+        <image-slot id="book-cover-5" shape="rounded" radius="10" style="width: 100%; aspectRatio: 2/3;" placeholder="Cover: skills"></image-slot>
+        <div style="fontSize: 12px; fontWeight: 600; letterSpacing: 0.05em; textTransform: uppercase; color: #9c4e22;">Skills</div>
+        <div style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: 17px;">Small Step, Big Change</div>
+        <div style="fontSize: 14px; color: #6b6259;">Checklists for everyday skills, without the overwhelm.</div>
+        <a href="https://author.amazon.com/books" style="fontSize: 14px; fontWeight: 600;">View on Amazon &rarr;</a>
+      </div>
+
+      <div style="display: flex; flexDirection: column; gap: 14px;">
+        <image-slot id="book-cover-6" shape="rounded" radius="10" style="width: 100%; aspectRatio: 2/3;" placeholder="Cover: planner"></image-slot>
+        <div style="fontSize: 12px; fontWeight: 600; letterSpacing: 0.05em; textTransform: uppercase; color: #9c4e22;">Planners</div>
+        <div style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: 17px;">Clear Head Planner</div>
+        <div style="fontSize: 14px; color: #6b6259;">A creative planner built around simple checklists.</div>
+        <a href="https://author.amazon.com/books" style="fontSize: 14px; fontWeight: 600;">View on Amazon &rarr;</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- REVIEWS -->
+  <sc-if value="{{ showReviews }}" hint-placeholder-val="{{ true }}">
+  <div id="reviews" style="background: #2a2521; color: #f7f2e9;">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 84px 28px;">
+      <div style="fontSize: 13px; fontWeight: 600; letterSpacing: 0.08em; textTransform: uppercase; color: #e3a06b; marginBottom: 12px;">Reader Reviews</div>
+      <h2 style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: clamp(1.7rem, 3vw, 2.4rem); margin: 0 0 44px;">What readers are saying</h2>
+      <div style="display: grid; gridTemplateColumns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px;">
+        <div style="background: #34302a; borderRadius: 16px; padding: 28px;">
+          <div style="color: #e3a06b; fontSize: 15px; marginBottom: 14px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div style="fontSize: 16px; marginBottom: 16px; textWrap: pretty;">&ldquo;Finally a guide that actually changes my day, not just another item on my &lsquo;to read&rsquo; list.&rdquo;</div>
+          <div style="fontSize: 14px; color: #c7bdae;">Reader, Amazon</div>
+        </div>
+        <div style="background: #34302a; borderRadius: 16px; padding: 28px;">
+          <div style="color: #e3a06b; fontSize: 15px; marginBottom: 14px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div style="fontSize: 16px; marginBottom: 16px; textWrap: pretty;">&ldquo;Simple checklists, concrete steps, zero fluff. I come back to this book every week.&rdquo;</div>
+          <div style="fontSize: 14px; color: #c7bdae;">Review, Amazon</div>
+        </div>
+        <div style="background: #34302a; borderRadius: 16px; padding: 28px;">
+          <div style="color: #e3a06b; fontSize: 15px; marginBottom: 14px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div style="fontSize: 16px; marginBottom: 16px; textWrap: pretty;">&ldquo;Like talking to someone who's already walked this path and shortened it for me.&rdquo;</div>
+          <div style="fontSize: 14px; color: #c7bdae;">Reader, Amazon</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- NEWSLETTER -->
+  <div id="newsletter" style="max-width: 1160px; margin: 0 auto; padding: 84px 28px;">
+    <div style="background: #f0e6d3; border: 1px solid #e2d7c3; borderRadius: 24px; padding: 56px; display: flex; gap: 40px; alignItems: center; flexWrap: wrap; justifyContent: space-between;">
+      <div style="flex: 1 1 320px;">
+        <h2 style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: clamp(1.5rem, 2.6vw, 2rem); margin: 0 0 10px;">Stay in the loop</h2>
+        <p style="fontSize: 16px; color: #4a4238; margin: 0; maxWidth: 440px; textWrap: pretty;">Sign up to get new book releases and free checklists straight to your inbox.</p>
+      </div>
+      <div style="flex: 1 1 320px;">
+        <sc-if value="{{ formVisible }}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{ handleSubmit }}" style="display: flex; gap: 10px; flexWrap: wrap;">
+          <input type="email" required="{{ true }}" value="{{ emailValue }}" onChange="{{ onEmailChange }}" placeholder="you@email.com" style="flex: 1 1 220px; padding: 14px 18px; borderRadius: 999px; border: 1px solid #d8c9a8; fontSize: 15px; background: #fffdf8; color: #2a2521;" />
+          <button type="submit" style="background: #c1652f; color: #fffaf2; border: none; padding: 14px 26px; borderRadius: 999px; fontWeight: 600; fontSize: 15px; cursor: pointer;">Sign me up</button>
+        </form>
+        </sc-if>
+        <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+        <div style="background: #fffdf8; border: 1px solid #d8c9a8; borderRadius: 14px; padding: 18px 22px; fontSize: 15px; color: #2a2521;">Thank you! Check your inbox to confirm your subscription.</div>
+        </sc-if>
+      </div>
+    </div>
+  </div>
+
+  <!-- BLOG -->
+  <sc-if value="{{ showBlog }}" hint-placeholder-val="{{ true }}">
+  <div id="blog" style="background: #fffdf8; borderTop: 1px solid #e2d7c3; borderBottom: 1px solid #e2d7c3;">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 84px 28px;">
+      <div style="fontSize: 13px; fontWeight: 600; letterSpacing: 0.08em; textTransform: uppercase; color: #9c4e22; marginBottom: 12px;">Updates</div>
+      <h2 style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: clamp(1.7rem, 3vw, 2.4rem); margin: 0 0 40px;">Latest news</h2>
+      <div style="display: flex; flexDirection: column; gap: 0;">
+        <div style="display: flex; gap: 24px; padding: 22px 0; borderBottom: 1px solid #e2d7c3; flexWrap: wrap;">
+          <div style="flex: 0 0 140px; fontSize: 14px; fontWeight: 600; color: #9c4e22;">August 2026</div>
+          <div style="flex: 1 1 400px;">
+            <div style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: 17px; marginBottom: 6px;">New mindfulness guide now available for pre-order</div>
+            <div style="fontSize: 15px; color: #6b6259;">Short, practical exercises for a calmer day &mdash; details coming soon.</div>
+          </div>
+        </div>
+        <div style="display: flex; gap: 24px; padding: 22px 0; borderBottom: 1px solid #e2d7c3; flexWrap: wrap;">
+          <div style="flex: 0 0 140px; fontSize: 14px; fontWeight: 600; color: #9c4e22;">July 2026</div>
+          <div style="flex: 1 1 400px;">
+            <div style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: 17px; marginBottom: 6px;">Updated Iceland guide for the 2026 season</div>
+            <div style="fontSize: 15px; color: #6b6259;">New spots, fresh prices, and updated packing checklists.</div>
+          </div>
+        </div>
+        <div style="display: flex; gap: 24px; padding: 22px 0; flexWrap: wrap;">
+          <div style="flex: 0 0 140px; fontSize: 14px; fontWeight: 600; color: #9c4e22;">June 2026</div>
+          <div style="flex: 1 1 400px;">
+            <div style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: 17px; marginBottom: 6px;">Free checklist for newsletter subscribers</div>
+            <div style="fontSize: 15px; color: #6b6259;">Sign up below to be first in line to get it.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- CONTACT -->
+  <div id="contact" style="max-width: 1160px; margin: 0 auto; padding: 84px 28px;">
+    <div style="fontSize: 13px; fontWeight: 600; letterSpacing: 0.08em; textTransform: uppercase; color: #9c4e22; marginBottom: 12px;">Contact & Social</div>
+    <h2 style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: clamp(1.7rem, 3vw, 2.4rem); margin: 0 0 20px;">Get in touch</h2>
+    <p style="fontSize: 16px; color: #4a4238; margin: 0 0 28px; maxWidth: 560px;">Collaborations, reviews, interviews? I personally reply to every message.</p>
+    <a href="mailto:kontakt@babelboost.com" style="fontFamily: 'Lora', serif; fontWeight: 600; fontSize: 20px; display: inline-block; marginBottom: 36px;">kontakt@babelboost.com</a>
+    <div style="display: flex; gap: 14px; flexWrap: wrap;">
+      <a href="https://www.amazon.com/author/babel-boost" style="border: 1.5px solid #2a2521; padding: 12px 22px; borderRadius: 999px; fontWeight: 600; fontSize: 14px; color: #2a2521;">Amazon Author Page</a>
+      <a href="#" style="border: 1.5px solid #2a2521; padding: 12px 22px; borderRadius: 999px; fontWeight: 600; fontSize: 14px; color: #2a2521;">Instagram</a>
+      <a href="#" style="border: 1.5px solid #2a2521; padding: 12px 22px; borderRadius: 999px; fontWeight: 600; fontSize: 14px; color: #2a2521;">Facebook</a>
+      <a href="#" style="border: 1.5px solid #2a2521; padding: 12px 22px; borderRadius: 999px; fontWeight: 600; fontSize: 14px; color: #2a2521;">Goodreads</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="background: #2a2521; color: #c7bdae;">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 32px 28px; display: flex; justifyContent: space-between; alignItems: center; gap: 16px; flexWrap: wrap; fontSize: 14px;">
+      <div>&copy; 2026 Babel Boost. All rights reserved.</div>
+      <div style="display: flex; gap: 20px;">
+        <a href="#about" style="color: #c7bdae;">About</a>
+        <a href="#books" style="color: #c7bdae;">Books</a>
+        <a href="#contact" style="color: #c7bdae;">Contact</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showReviews&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Sections&quot;}, &quot;showBlog&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Sections&quot;}}">
+class Component extends DCLogic {
+  state = { email: '', submitted: false };
+
+  renderVals() {
+    return {
+      showReviews: this.props.showReviews ?? true,
+      showBlog: this.props.showBlog ?? true,
+      emailValue: this.state.email,
+      submitted: this.state.submitted,
+      formVisible: !this.state.submitted,
+      onEmailChange: (e) => this.setState({ email: e.target.value }),
+      handleSubmit: (e) => {
+        e.preventDefault();
+        if (this.state.email) this.setState({ submitted: true });
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
